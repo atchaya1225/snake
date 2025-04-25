@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: 20px;
+}
+
+.game-container {
+  position: relative;
+  display: inline-block;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  grid-template-rows: repeat(10, 30px);
+  gap: 2px;
+  background: #333;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  background: #eee;
+  border-radius: 4px;
+}
+
+.snake {
+  background: #27ae60;
+}
+
+.food {
+  background: #e74c3c;
+}
+
+.overlay {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  color: white;
+  background: rgba(0,0,0,0.6);
+  padding: 30px;
+  border-radius: 10px;
+}
